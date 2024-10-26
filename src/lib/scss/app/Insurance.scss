@@ -1,0 +1,41 @@
+
+.insurance > div:first-child {padding: 0; width: 100%;}
+.insurance article {padding: 2rem 1.6rem;}
+.insurance .addfile {padding: 1.2rem; border: 1px solid var(--blue); color: var(--blue); font-weight: 500; font-size: 1.4rem; border-radius: .4rem; background-color: transparent; width: 100%;}
+
+
+.attatchFiles {display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin-bottom: 6rem;}
+.attatchFiles > div {position: relative;}
+.attatchFiles > div i {position: absolute; top: 1.6rem; right: 1.6rem; z-index: 0;}
+
+footer {background-color: var(--white); z-index: 10; position: fixed; bottom: 0; width: calc(100% - 2.8rem); padding: 1.2rem 0;}
+
+.input-group {display: flex; flex-direction: column; gap: 1.6rem;}
+.input-group input {margin-top: .8rem;}
+
+.terms-wrapper { display: flex; flex-direction: column; margin-bottom: 2.4rem;}
+    .term-item { display: flex !important; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;}
+    .term-item div:first-child {display: flex !important; align-items: center;}
+    .check { width: 20px; height: 20px; border: 2px solid #E5E5EC; background-color: var(--disabled); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; transition: background-color 0.1s; }
+    .check.selected { background-color: var(--blue); border: 2px solid var(--blue); }
+
+.pageHeader {display: flex; gap: 2.4rem; overflow-x: auto; padding: 1.4rem 0; border-top: 1px solid var(--disabled); margin-top: 1.4rem;}
+.pageHeader p {white-space: nowrap;}
+.pageHeader .selected {font-weight: 700; color: var(--blue);}
+
+#단체상해보험 table {width: 100%; border-collapse: collapse;}
+#단체상해보험 th:first-child, #단체상해보험 td:first-child {
+    border-left: none;
+}
+
+#단체상해보험 th:last-child, #단체상해보험 td:last-child {
+    border-right: none;
+}
+
+#단체상해보험 th {background-color: var(--background);}
+#단체상해보험 th, td {font-size: 1.4rem; color: var(--black); padding: 1.2rem 1.4rem; border: .7px solid var(--disabled); text-align: center;}
+
+#단체상해보험 .flex-center > div {display: flex; align-items: center; gap:.8rem;}
+#단체상해보험 .option-wrapper.mb20 {margin-bottom: 0;}
+#단체상해보험 .selectList {display: flex; flex-direction: column; height: 100%; overflow: auto;}
+#단체상해보험 .show {color: var(--blue);}

@@ -1,0 +1,9 @@
+.settings:not(:last-child) {margin-bottom: 4.8rem;}
+
+.setting-list article {display: flex; align-items: center; justify-content: space-between;}
+.setting-list {display: flex; flex-direction: column; gap: 2.4rem 0;}
+
+.toggle-btn { width: 52px; height: 28px; background-color: var(--disabled); border-radius: 14px; position: relative; cursor: pointer;  transition: background-color 0.3s ease;}
+.toggle-btn::before { content: ''; width: 24px; height: 24px; background-color: var(--white); border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: left 0.3s ease; }
+.toggle-btn.active { background-color: var(--black); }
+.toggle-btn.active::before { left: calc(100% - 26px); }

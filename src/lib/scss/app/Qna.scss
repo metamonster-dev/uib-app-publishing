@@ -1,0 +1,17 @@
+#자주묻는질문 {
+    article {display: flex; justify-content: space-between; align-items: center; padding: 1.4rem;}
+    article > div:first-child {display: flex; justify-content: start; gap: 1.2rem; width: 85%;}
+    article.answer {background-color: var(--background);}
+    article.answer > div:first-child {width: 100%;}
+    .underline {margin: 0; margin-bottom: 1.2rem;}
+}
+
+#필수서류안내 {
+    article > div:first-child {display: flex; justify-content: space-between; align-items: center;}
+    .underline {margin: 1.6rem 0;}
+}    
+
+#문의내역 {background-color: var(--background);}
+#문의내역 article , #문의상세 article {display: flex; justify-content: space-between; align-items: center; padding: 1.6rem 2.4rem; background-color: var(--white); border-radius: var(--border-radius-sm); margin-bottom: 1.2rem;}
+#문의내역 .badge , #문의상세 .badge {background-color: #FDF3E2; color: #EE772F; font-size: 1.3rem; font-weight: 500; padding: .4rem 1rem; width: max-content; border-radius: .4rem;}
+#문의내역 .badge.response , #문의상세 .badge.response {background-color: #F2F8EA; color: #04B014;}

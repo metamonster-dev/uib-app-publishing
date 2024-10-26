@@ -1,0 +1,5 @@
+#splash {background-color: #032D47;}
+.splash-item { white-space: nowrap; display: flex; flex-direction: column; align-items: center; justify-content: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); gap: 0.4rem; }
+.splash-item img {max-width: 132px;}
+.text-center {display: flex; flex-direction: column;}
+.small {color: #48687B !important; margin-top: auto;}

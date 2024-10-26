@@ -1,0 +1,40 @@
+ @font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 45 920;
+    font-display: swap;
+    src: url('/src/lib/assets/fonts/PretendardVariable.woff2') format('woff2-variations');
+  }
+
+html {font-size: 10px;}
+body {font-family: "Pretendard" !important;}
+a, button {color: initial; text-decoration: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+a, p, h1, h2, h3, h4, h5, h6, input, textarea, span, button {margin: 0; color: var(--font); font-family: "Pretendard" !important}
+
+input {font-size: 1.45rem;}
+textarea {font-size: 1.45rem;line-height: 23px;}
+
+* {letter-spacing: -0.05em;}
+span.small {font-size: 1.1rem !important;}
+
+$fonts: (
+    h4: ('Pretendard', 2rem, 700, 30px),
+    h5: ('Pretendard', 1.8rem, 700, 28px),
+    h6: ('Pretendard', 1.3rem, normal, 18px),
+    a: ('', '', normal, ''),
+    span: ('Pretendard', 1.4rem, normal, 18px),
+    p: ('Pretendard', 1.6rem, 450, 22px),
+);
+
+@each $element, $properties in $fonts {
+  #{$element} {
+    font-family: nth($properties, 1);
+    font-size: nth($properties, 2);
+    font-weight: nth($properties, 3);
+    line-height: nth($properties, 4);
+  }
+}
+
+@for $i from 100 through 900 {
+    .fw#{$i} { font-weight: #{$i}; }
+}

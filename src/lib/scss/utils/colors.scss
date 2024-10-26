@@ -1,0 +1,53 @@
+$colors: (
+    black: #000000,
+    white: #FFFFFF,
+    red: #DC0000,
+    success: #04B014,
+    warning: #FFAA00,
+    background: #F7F7FB,
+    blue: #2260FF,
+    gray: #767676,
+    lightGray: #E0E0E0,
+
+    
+    font: #272836,
+
+
+    disabled: #F1F1F5,
+    disabled-text: #999999,
+);
+
+:root {
+    @each $color, $value in $colors {
+        --#{$color}: #{$value};
+    }
+}
+
+@mixin apply-colors() {
+    @each $color, $value in $colors {
+        .#{$color} {
+            color: var(--#{$color}) !important;
+        }
+
+        .fill-#{$color} {
+            fill: var(--#{$color});
+        }
+
+        .#{$color}-disable {
+            color: rgba(var(--#{$color}), 0.5);
+        }
+
+        .bg-#{$color} {
+            background-color: var(--#{$color}) !important;
+        }
+
+        svg {
+            .#{$color} {
+                fill: var(--#{$color});
+            }
+        }
+    }
+}
+
+@include apply-colors();
+

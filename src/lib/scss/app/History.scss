@@ -1,0 +1,27 @@
+#보험금청구서 > div:first-child {padding: 0; width: 100%;}
+#보험금청구서 {
+    .underline.small {background-color: var(--lightGray); height: 1px; margin: 1.6rem 0;}
+    .card {padding: 2rem 1.6rem;}
+    .subCard {padding: 2rem; background-color: var(--background); border-radius: var(--border-radius-sm);}
+    .subCard.none {background-color: transparent; padding: 0;}
+    .subCard.block div:not(.underline) {display: block;}
+
+    .subCard div:not(.underline) { display: grid; grid-template-columns: auto auto; row-gap: .8rem;}
+    .subCard .fw600:not(:first-child) {text-align: right;}
+
+    .char-count { text-align: right; padding: 1.8rem; position: relative; top: -4.8rem;}
+
+    button.addfile {color: var(--blue); border: 1px solid var(--blue); border-radius: .4rem; padding: .4rem .8rem; background-color: transparent; font-size: 1.3rem; font-weight: 600;}
+
+  
+    .terms-wrapper { display: flex; flex-direction: column; margin-bottom: 2.4rem;}
+    .term-item { display: flex !important; align-items: center; justify-content: space-between; margin-bottom: 1.2rem;}
+    .term-item div:first-child {display: flex !important; align-items: center;}
+    .check { width: 20px; height: 20px; border: 2px solid #E5E5EC; background-color: var(--disabled); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; transition: background-color 0.1s; }
+    .check.selected { background-color: var(--blue); border: 2px solid var(--blue); }
+
+    .form-wrapper {gap: 1.2rem;}
+    .form-wrapper > div {display: grid !important; grid-template-columns: 1fr 1fr; gap: 1.2rem;}
+    .form-wrapper h6 {color: var(--gray);}
+    .form-wrapper .info-input {border: none; width: 100%; border-bottom: 1px solid var(--lightGray); padding: 0; padding-bottom: .6rem; margin-top: 1.2rem; font-size: 1.6rem;border-radius: 0;}
+}
